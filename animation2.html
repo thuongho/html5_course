@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+	<head>
+		<title>animation</title>
+		<style>
+		body{
+			background:url(images/stars1.jpg);
+			width:700px;
+			color:#e3e3e3;
+			font-family: sans-serif;
+			margin: auto;
+		}
+		h1{
+			margin: auto;
+			text-align: center;
+			text-shadow: 2px 1px 1px blue;
+		}
+		p{
+			text-align: left;
+		}
+		.transform{
+			width:700px;
+			height:200px;
+			margin: 30px auto;
+		}
+		.man{
+			background: yellow;
+			width: 100px;
+			height: 100px;
+			position: relative;
+			animation:myfirst 5s;
+			-webkit-animation:myfirst 5s; /* Safari and Chrome */
+		}
+		.eyes{
+			background: black;
+			width:25px;
+			height:25px;
+			position: relative;
+			top:10px;
+			left:60px;
+			animation:myfirsteyes 5s;
+			-webkit-animation:myfirsteyes 5s; /* Safari and Chrome */
+		}
+		.mouth{
+			background:black;
+			width:40px;
+			height:5px;
+			position: relative;
+			top:45px;
+			left:60px;
+			animation:myfirstmouth 5s;
+			-webkit-animation:myfirstmouth 5s; /* Safari and Chrome */
+		}
+		/* body */
+		@keyframes myfirst
+		{
+			0% {background: yellow;
+				width: 100px;
+				height: 100px;
+				position: relative; 
+				left:0px; 
+				top:0px;}
+			25% {background: red;
+				width: 100px;
+				height: 100px;
+				position: relative; 
+				left:200px; 
+				top:0px;}
+			50% {background: red;
+				width: 50px;
+				height: 50px;
+				position: relative; 
+				left:200px; 
+				top:0px;}
+			100% {background: green;
+				width: 200px;
+				height: 200px;
+				position: relative; 
+				left:200px; 
+				top:0px;}
+		}
+		@-webkit-keyframes myfirst /* Safari and Chrome */
+		{
+			0% {background: yellow;
+				width: 100px;
+				height: 100px;
+				position: relative; 
+				left:0px; 
+				top:0px;}
+			25% {background: red;
+				width: 100px;
+				height: 100px;
+				position: relative; 
+				left:200px; 
+				top:0px;}
+			50% {background: red;
+				width: 50px;
+				height: 50px;
+				position: relative; 
+				left:200px; 
+				top:0px;}
+			100% {background: green;
+				width: 200px;
+				height: 200px;
+				position: relative; 
+				left:200px; 
+				top:0px;}
+		}
+		/* eyes */
+		@keyframes myfirsteyes
+		{
+			0% {background: black;
+				width:25px;
+				height:25px;
+				position: absolute;
+				top:10px;
+				left:60px;}
+			25% {background: white;
+				width:25px;
+				height:25px;
+				position: absolute;
+				top:10px;
+				left:60px;}
+			50% {background: white;
+				width:10px;
+				height:10px;
+				position: absolute;
+				top:5px;
+				left:30px;}
+			100% {background: red;
+				width:50px;
+				height:50px;
+				position: absolute;
+				top:20px;
+				left:120px;}
+		}
+		@-webkit-keyframes myfirsteyes /* Safari and Chrome */
+		{
+			0% {background: black;
+				width:25px;
+				height:25px;
+				position: absolute;
+				top:10px;
+				left:60px;}
+			25% {background: white;
+				width:25px;
+				height:25px;
+				position: absolute;
+				top:10px;
+				left:60px;}
+			50% {background: white;
+				width:10px;
+				height:10px;
+				position: absolute;
+				top:5px;
+				left:30px;}
+			100% {background: red;
+				width:50px;
+				height:50px;
+				position: absolute;
+				top:20px;
+				left:120px;}
+		}
+
+		/* mouth */
+		@keyframes myfirstmouth
+		{
+			0% {background: black;
+				width:40px;
+				height:5px;
+				position: absolute;
+				top:45px;
+				left:60px;}
+			25% {background: black;
+				width:40px;
+				height:5px;
+				position: absolute;
+				top:45px;
+				left:60px;}
+			50% {background: black;
+				width:20px;
+				height:5px;
+				position: absolute;
+				top:22px;
+				left:30px;}
+			100% {background: red;
+				width:80px;
+				height:30px;
+				position: absolute;
+				top:90px;
+				left:120px;}
+		}
+		@-webkit-keyframes myfirstmouth /* Safari and Chrome */
+		{
+			0% {background: black;
+				width:40px;
+				height:5px;
+				position: absolute;
+				top:45px;
+				left:60px;}
+			25% {background: black;
+				width:40px;
+				height:5px;
+				position: absolute;
+				top:45px;
+				left:60px;}
+			50% {background: black;
+				width:20px;
+				height:5px;
+				position: absolute;
+				top:22px;
+				left:30px;}
+			100% {background: red;
+				width:80px;
+				height:30px;
+				position: absolute;
+				top:90px;
+				left:120px;}
+		}
+		.radiation{
+			margin:auto;
+			text-align: center;
+		}
+		.smash{
+			width: 700px;
+			margin: auto;
+			text-align: center;
+		}
+		.home{
+			width: 700px;
+			text-align: center;
+		}
+		footer
+		{
+			width: 700px;
+			margin: auto;
+			text-align: center;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>In a Nutshell</h1>
+		<p>A scientist had an accident with gamma radiation. Now with anger as a catalyst, he is transformed into a superhuman being with incredible strength and an unsatisfiable rage.</p>
+<!--
+		<div class="radiation">
+			<object type="application/x-java-applet" height="75" width="75">
+			<param name="code" value="atom.class">
+			<param name="bgcolor" value="0,0,0">
+			<param name="ecolor" value="red">
+			<param name="speed" value="10">
+			<param name="rotate" value="3">
+			<param name="electrons" value="4">
+			<param name="ringcolor" value="green">
+			<param name="phase" value="45">	
+    			</object>
+		</div>
+-->
+    	<section class="transform">
+		<div class="man">
+			<div class="eyes"></div>
+			<div class="mouth"></div>
+		</div>
+		</section>
+		<br>
+
+		<p>Here is your chance to experience a fraction of the Hulk's incredible strength. Go ahead take out your anger on this house by doing a <em>Hulk Smash</em>!</p>
+<!--    	
+    	<div class="smash">
+    		<object type="application/x-java-applet" width="500" height="250">
+	    	<param name="code" value="KaBoom.class">
+	    	</object>
+    	</div>
+-->
+
+		<p class="home">Click <a href="HW5.html">here</a> to return to HW5<p>
+
+	<footer>
+
+	<div id="validate">
+		
+		<script type="text/javascript">
+		var dateModified = document.lastModified;
+		mydate = dateModified.slice(0,16);
+		document.write("Last updated: " + mydate);
+		</script>
+		 &nbsp; | &nbsp;
+ 
+		<a href="http://validator.w3.org/check?uri=referer">
+		<img style="border:0;width:88px;height:31px" src="html5.jpg"
+		alt="HTML5"></a>
+
+
+	    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+	    <img style="border:0;width:88px;height:31px" src="images/vcss_blue.gif"
+	    alt="Valid CSS!"></a>
+	</div>
+     
+
+	</footer>
+	</body>
+</html>

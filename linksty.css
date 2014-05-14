@@ -1,0 +1,155 @@
+
+#content {
+	width:950px;
+	margin: 0px auto; padding: 5px;
+        text-align: left; /* Counteract to IE/Win Hack */
+	border:1px dashed #333;
+	background-color:#eee
+         }    
+
+
+body {
+
+background-color: #000000;
+color: #000000;
+
+}
+
+
+
+/* NAVIGATION */
+
+
+ul#mainNav {
+
+	padding: 0;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 160px; 
+        
+}
+#mainNav li {
+	float: left;
+	width: 12em;
+}
+
+#mainNav a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 11px;
+	border: 1px dashed #999999;
+	border-bottom: none;
+	display: block;
+	padding: 7px 5px 2px 30px;
+	background: #E7E7E7 url(link.png) no-repeat left center;
+}
+
+#mainNav a:hover {
+	font-weight: bold;
+	background: #B2F511 url(go.png) no-repeat 5px 50%;
+}
+
+/* special formatting for home page link */
+a#homeLink {
+	background: #E7E7E7 url(home.png) no-repeat 5px 52%;
+}
+
+/* styles for the "you are here" buttons */
+#uAreHere #mainNav a#activeLink {
+	background: #FFFFFF url(bg_here.png) no-repeat 5% 50%;
+	padding-right: 15px;
+	padding-left: 30px;
+	font-weight: bold;
+	padding-bottom:10px;
+	color: #B2F511;
+	border: 1px solid #000000;	
+}
+
+/* IE Fixes */
+
+/* force hover on entire width of  link */
+* html #mainNav a {
+	height: 1px;
+}
+
+h2 {
+
+background-image: url('textile_marigold.jpg');
+background-repeat: repeat;
+color: #006633;
+text-align: center;
+margin-top: 10px;
+margin-left: 50px;
+margin-right: 50px;
+font-weight: bold; font-style:normal; font-variant:normal; font-size:22pt; font-family:Verdana, san-serif;
+}
+
+
+p.main  {
+font: 12pt 'cambria';
+color: #66FFFF;
+background: #9900FF;
+text-indent: .2in;
+margin-left: 100px;
+margin-right: 100px;
+text-align: justify;
+border: dotted;
+padding: 7px;
+}
+
+
+
+
+#new  {
+font-family: 'Century Gothic';
+padding: 5px 10px  10px;
+line-height: 16pt;
+border-style: ridge;
+border: 3px solid black;
+background-color: #deb887;
+font-size: 12pt;color: #ff0000;
+text-align: justify;
+font-weight: bold;
+margin-left: 200px;
+margin-right: 300px;
+width: 600px;
+      }
+
+p.lil {
+font-size: 18pt;
+text-align: center;
+font-weight: bold;
+font-variant:small-caps;
+margin-left: 50px;
+margin-right: 50px;
+color: #3923D6;
+background: #8EB4E6;
+}
+
+p.newext {
+font-size: 12pt;
+color: #336633;
+background: #89FC63;	
+}
+
+
+a {
+
+color: #0000ff; text-decoration: none;
+}
+
+
+a:hover { color:#8f0052;
+text-decoration: underline;
+background-color: deepskyblue;
+}
+
+
+address 
+{
+font-family: chalkduster, serif;
+font-size: 14pt;
+font-weight: bold;
+color: #FF0000;
+}

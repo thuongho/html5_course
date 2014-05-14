@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Homework 2</title>	
+
+
+<style type="text/css">
+
+body {
+     background-color: #00CCFF;
+     text-align:center; /* Hack for IE/Win */ 
+     margin-top: 10px;
+     }
+
+
+/* NAVIGATION */
+
+
+ul#mainNav {
+     
+	padding: 0;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 160px; 
+}
+
+#mainNav li {
+	float: left;
+	width: 12em;
+}
+
+#mainNav a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 11px;
+       
+	border: 1px dashed #999999;
+	border-bottom: none;
+	display: block;
+	padding: 7px 5px 2px 30px;
+	background: #E7E7E7 url(link.png) no-repeat left center;
+}
+
+#mainNav a:hover {
+	font-weight: bold;
+	background: #B2F511 url(go.png) no-repeat 5px 50%;
+}
+
+/* special formatting for home page link */
+a#homeLink {
+	background: #E7E7E7 url(home.png) no-repeat 5px 52%;
+}
+
+/* styles for the "you are here" buttons */
+#uAreHere #mainNav a#activeLink {
+	background: #FFFFFF url(bg_here.png) no-repeat 5% 50%;
+	padding-right: 15px;
+	padding-left: 30px;
+	font-weight: bold;
+	padding-bottom:10px;
+	color: #B2F511;
+	border: 1px solid #000000;	
+}
+
+/* IE Fixes */
+
+/* force hover on entire width of  link */
+* html #mainNav a {
+	height: 1px;
+}
+
+
+
+.content {
+	width:950px;
+
+	margin: 0px auto; padding: 10px;
+        text-align: left; /* Counteract to IE/Win Hack */
+	
+	background-color:#eee;
+         }    
+
+
+
+.pol { 
+	 text-align: center;
+         font-size: 24px;
+	   }
+
+
+h1 {
+
+font:  24pt Desdemona;
+color: #8f0052;
+text-align: center;
+}
+
+
+h2 {
+
+font:  20pt 'Curlz MT';
+color: #339900;
+text-align: left;
+}
+
+
+h3 {
+
+font-family: 'Brush Script MT';
+font-size: 18pt;
+color: #9900FF;
+text-align: center;
+}
+
+h4 {
+
+font-family: 'Colonna MT';
+font-size: 14pt;
+color: #ff00ff;
+text-align: center;
+}
+
+
+p.left  {
+
+font-family: 'Bell MT', Verdana, san-serif;
+font-size: 10pt; 
+color: #6600FF;
+text-align: left;
+font-weight: bold;
+text-indent: .2in;
+}
+
+
+p.right  {
+
+font-family: Didot, helvetica, san-serif;
+font-size: 12pt; 
+color: #660099;
+text-align: justify;
+background-color: #CCCCFF;
+border-style: solid;
+border-color: #FF00FF;
+padding: 3em;
+}
+
+p.ital  {
+
+font-family: 'Footlight MT Light';
+font-size: 12pt;
+color: #9c3ece;
+text-align: justify;
+font-weight: bold;
+font-style: italic;
+}
+
+p.new  {
+	
+font-family: Verdana, san-serif;
+font-size: 10pt;
+color: #3300CC;
+border: 2px dotted #993333;	
+}
+
+
+a {
+
+color: #0000ff; 
+text-decoration: none;
+}
+
+a:hover { color:#8f0052;
+text-decoration: underline;
+background-color: yellow;
+}
+
+.center {text-align: center;}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="content">
+
+<section>
+
+
+
+  <ul id="mainNav">
+
+    <li><a href="HW2.html" target="_self" id="homeLink">Embedded Style Sheet</a></li>
+    <li><a href="styleext.html" target="_self" id="egLink">Linked Style Sheet</a></li>
+    <li><a href="styleinline.html" target="_self" id="jmLink">Inline Style Sheet</a></li>
+    
+  </ul>
+
+
+
+<br>
+
+<h1>Embedded Style Sheet Example</h1>
+
+
+<p class="pol">The politics of the 21st century</p>
+
+<h2>Lefties and Righties</h2>
+
+
+<p class="left">
+
+Socialists are to the left of liberals.
+ Most liberals are Democrats, although some have
+wandered over to the Green party. Republicans are right-wingers. 
+Most Republicans are 
+conservative. What does conservative mean? Do they want to
+conserve the environment? Do they want to conserve the 2nd amendment?
+Do they want to conserve a woman's right to choose an abortion?
+ Do they want to conserve a separation between church and state?
+
+<a href="http://www.microsoft.com">Click here</a>
+for Bill Gates.</p>
+
+
+<h3>Women and Men  (Satire)</h3>
+
+<p class="right">
+
+Women have been called dames, broads, chicks, 
+and foxes. They are supposed to be good at nurturing, child-rearing, 
+and catering to men. They always seem to lose their keys and they want
+ their men to be macho, adventurous, brave, and handsome. They love
+hunks. Men are good in math and engineering and like the sport of
+one-upmanship. Men 
+love sports and mowing lawns. They are good at fixing
+ clogged drains, but they hate cleaning
+ the bathroom.
+<a href="http://www.sfgiants.com">Click here</a> for your 
+San Francisco Giants!
+</p>
+
+<h4>Personal Responsibility</h4>
+
+<p class="ital">
+The name of the game is personal responsibility. That means that you
+ just need to take care of yourself and not
+ care about things like community involvement, poor people, or 
+ the obscene gap between the rich and poor in this country.
+</p>
+
+<p class="new">
+	Ever wonder why the sky is blue? The sun's ray is made up of every color. However, when it hits the Earth's atmosphere, the sunlight is scattered in all directions by all the gases and particles in the air.  Since blue has the shortest wavelength, that color is scattered more than other colors.  Thus, the sky is blue most of the time. Reference from <a href="http://spaceplace.nasa.gov/blue-sky/en/">NASA</a>.
+</p>
+
+
+</section>
+
+</div>
+
+<footer>
+
+<p class="center">
+ 
+<a href="http://validator.w3.org/check?uri=referer">
+<img style="border:0;width:88px;height:31px" src="html5.jpg"
+alt="HTML5"></a>
+
+
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!">
+    </a>
+</p>
+     
+
+</footer>
+
+</body>
+</html>

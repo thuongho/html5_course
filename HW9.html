@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Homework 9</title>
+	<script type="text/javascript">
+
+//<![CDATA[
+
+//GROWING TEXT AND IMAGE
+
+txtsize=0;
+maxsize=35;
+
+var timer;
+
+//Grow text
+//Execute function writeMsg() once after a delay of 30 milliseconds
+//text grows from 0 pixels to 35 pixels
+
+function writeMsg()
+{
+if (txtsize<maxsize)
+	{
+	document.getElementById('msg').style.fontSize=txtsize+"px"
+	txtsize++
+	timer=setTimeout("writeMsg()",20)
+	}
+}
+
+function stopTimer()
+{
+clearTimeout(timer)
+}
+
+/*]]>*/
+
+// MOUSEOVER IMAGE 
+
+function switchImage()
+{
+document.getElementById("cloud").src ="images/AerithDeath.jpg"
+} 
+function restoreImage()
+{
+document.getElementById("cloud").src ="images/cloud_arith.jpg"
+}
+
+// MESSAGEBOX
+
+function MsgBox(textstring)  {
+
+if (textstring == "Red XIII" || textstring == "RED XIII")
+	{
+	alert ("Yup! His name is Red XIII!");
+	}
+
+	else 
+	{
+	alert ("Sorry try again! Hint, his name starts with Red.");
+	}
+
+ }
+
+ //DROPDOWN
+
+
+ function surfto(form) {
+        var myindex=form.dest.selectedIndex
+        location=form.dest.options[myindex].value;
+}
+
+//POPUP
+//Tifa
+function new_tifa(url)  {
+
+link = 
+window.open(url,
+'_new1', 'toolbar=0,menubar=0,scrollbars=1,status=1,resizable=1,top=10,left=340,fullscreen=0,Height=400px,Width=350px', '')
+
+}
+//Zack
+function new_zack(url)  {
+
+link = 
+window.open(url,
+'_new2', 'toolbar=0,menubar=0,scrollbars=1,status=1,resizable=1,top=10,left=340,fullscreen=0,Height=450px,Width=300px', '')
+
+}
+//Sephiroth
+
+function new_sephiroth(url)  {
+
+link = 
+window.open(url,
+'_new0', 'toolbar=0,menubar=0,scrollbars=1,status=1,resizable=1,top=10,left=350,fullscreen=0,Height=450px,Width=400px', '')
+
+}
+
+</script>
+<!-- the following uses jquery to fade some text; #fadeText is the id of the p tag -->
+
+<script type="text/javascript" src="http://fog.ccsf.cc.ca.us/~srubin/jquery.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#fadeText").fadeTo("slow",0.25);
+  });
+});
+
+</script>
+<style>
+	body { background: url('images/starry.jpg');}
+	#msg 
+	{ 
+		text-shadow: 1px 1px 1px white,
+			2px 2px 1px #9966CC;
+		text-align: center;
+	}
+	header p {
+		text-align: center;
+	}
+	#content {
+		background: #CCCCFF;
+		width: 700px;
+		margin: 0px auto;
+		border: 1px solid #CCFFFF;
+		border-radius: 2px;
+		position: relative;
+	}
+	img { 
+		border-radius: 2px;
+		box-shadow: 5px 5px 50px #000000;
+	}
+	#trick, #info {
+		background: white;
+		border: 1px solid white;
+		box-shadow: 0px 0px 5px;
+	}
+	h4 {
+		margin-bottom: 5px;
+	}
+	#trick {
+		width: 670px;
+		height: 300px;
+		position: relative;
+		top: 10px;
+		left: 5px;
+		padding-left: 10px;
+	}
+	#info {
+		padding-left: 5px;
+		background: #CC99FF;
+		width: 250px;
+		position: relative;
+		top: -280px;
+		left: 420px;
+		border-radius: 5px;
+	}
+	a { text-decoration: none;}
+	#info p {margin-bottom: 0px; margin-top: 0px;}
+	footer { 
+		text-align: center;
+		margin-bottom: 10px; 
+	}
+	footer img {box-shadow: none;}
+
+</style>
+</head>
+<body onload="writeMsg();" onunload="stopTimer(); stopInt();">
+<div id="content">
+	<header>
+	<p><span id="msg">Final Fantasy VII</span></p>
+			
+	</header>
+
+	<img src="images/cloud_arith.jpg" width="640" height="420" alt="Cloud Aerith" id="cloud" 
+ onmouseover="switchImage()" onmouseout="restoreImage()" ><br /><p>Mouseover to see an epic love story ending.</p>
+ <div id="trick">
+ <h3>Cool Trick</h3>
+
+<!-- Simple alert of a message -->
+
+<p id="fadeText">
+Here is a neat little trick to revive the all so popular Aerith.<br>
+Click <a class="x" href="javascript:alert('Sorry that is just a myth! :(')">here </a>
+to find out how.
+<!-- button using jquery for fading the validation images -->
+<button type="button">Let the memory of Aerith fade away.</button>
+</p>
+<br>
+<p>To check out HW8's form page, please click <a href="HW9a.html" title="password protected"><b>here</b></a>. Be<br> forewarned though, it is password protected.</p>
+</div>	
+<div id="info">
+<h4>Trivia</h4>
+	<form><p>
+What is the name of the Lion in Final Fantasy VII? &nbsp;&nbsp;&nbsp; <input name="text2" type="text" size="8" style="margin-right:0px;">
+<input name="submit" type="button" value="Guess" onclick="MsgBox(form.text2.value)"></p>
+</form>
+
+
+
+<h4>Learn More</h4>
+<!-- Pop-up Windows  -->
+
+<nav class="tpad"> 
+<a href="javascript:new_tifa('tifa.html')">Tifa</a> |
+<a href="javascript:new_zack('zack.html')">Zack</a> | 
+<a href="javascript:new_sephiroth('sephiroth.html')">Sephiroth</a>
+</nav>
+
+<!-- drop-down menu -->
+
+<form name="myform">
+  <select name="dest">
+    <option selected="selected" value="HW9.html"> Pick a Character to learn more </option>
+    <option value="http://finalfantasy.wikia.com/wiki/Tifa_Lockhart">Tifa Lockhart</option>
+    <option value="http://finalfantasy.wikia.com/wiki/Zack_Fair">Zack Fair</option>
+    <option value="http://finalfantasy.wikia.com/wiki/Sephiroth_(Final_Fantasy_VII)">Sephiroth</option>
+  </select>
+<input type="button" value="Go!" onclick="surfto(this.form)" />
+</form>
+
+</div>
+
+	<footer>
+
+	<div id="center">
+		
+		<script type="text/javascript">
+		var dateModified = document.lastModified;
+		mydate = dateModified.slice(0,16);
+		document.write("Last updated: " + mydate);
+		</script>
+		 &nbsp; | &nbsp;
+ 
+		<a href="http://validator.w3.org/check?uri=referer">
+		<img style="border:0;width:88px;height:31px" src="html5.jpg"
+		alt="HTML5"></a>
+
+
+	    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+	    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+	    alt="Valid CSS!"></a>
+	</div>
+
+	</footer>
+</div>
+</body>
+</html>

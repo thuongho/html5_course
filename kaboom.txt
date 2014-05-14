@@ -1,0 +1,15 @@
+THIS SCRIPT BROUGHT TO YOU BY JAVAFILE.COM - http://www.javafile.com
+
+
+
+
+
+PASTE THIS SCRIPT INTO YOUR BODY TAG
+
+<applet code=KaBoom width=500 height=250>
+</applet>
+
+
+
+
+THIS SCRIPT BROUGHT TO YOU BY JAVAFILE.COM - http://www.javafile.com

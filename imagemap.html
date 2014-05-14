@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Puzzle Game</title>
+	<style type="text/css">
+
+
+	body {font-family: verdana;
+	     background-image: url('stars1.jpg');
+	     margin: 10px 0px; padding: 0px;
+	     text-align:center; /* Hack for IE/Win */ 
+		 color:#ffffff;
+	     }
+		 
+    .content
+	{
+		margin-left:auto;
+		margin-right:auto;
+    	width: 700px;
+    }
+	
+	footer { margin-top: 20px; }
+	</style>
+</head>
+<body>
+	<section class="content">
+		<h3>Can you spot the following?</h3>
+		<!--
+		<ol>
+			<li>Fry with green lips</li>
+			<li>Leela</li>
+			<li>Bender doing a magic trick</li>
+		</ol>
+			-->
+		<p>Fry with green lips</p>
+		<p>Leela</p>
+		<p>Bender doing a magic trick</p>
+		
+		<map name="cast">
+			<area shape="rect" coords="61,96,106,163" alt="fry" href="http://en.wikipedia.org/wiki/Fry_%28Futurama%29">
+			<area shape="circle" coords="411,212,22" alt="leela" href="http://en.wikipedia.org/wiki/Leela_%28Futurama%29">
+			<area shape="poly" coords="547,42,580,41,584,71,606,71,604,120,547,115" alt="bender" href="http://en.wikipedia.org/wiki/Bender_%28Futurama%29">
+		</map>
+		
+		<img usemap="#cast" width="700" height="525" alt="season 1 casts" src="Futurama_cast_700.jpg">
+	
+		<br>
+		<p>Click <a href="HW4.html">here</a> to return to HW4<p>
+        </section>
+	<footer>
+
+	<div id="center">
+		
+		<script type="text/javascript">
+		var dateModified = document.lastModified;
+		mydate = dateModified.slice(0,16);
+		document.write("Last updated: " + mydate);
+		</script>
+		 &nbsp; | &nbsp;
+ 
+		<a href="http://validator.w3.org/check?uri=referer">
+		<img style="border:0;width:88px;height:31px" src="html5.jpg"
+		alt="HTML5"></a>
+
+
+	    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+	    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+	    alt="Valid CSS!"></a>
+	</div>
+     
+
+	</footer>
+</body>
+</html>

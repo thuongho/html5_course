@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Homework 5</title>
+	<style>
+		body
+		{
+			background: black;
+			font-family: sans-serif;
+			color:white;
+		}
+		header
+		{
+			background: blue;
+			opacity: 0.7;
+			margin-top: 40px;
+		}
+		h1 
+		{
+			text-align: center;
+			text-shadow: 1px 2px 1px black;
+			opacity: 1;
+		}
+		strong
+		{
+			color:green;
+			text-shadow: 1px 2px 1px white;
+		}
+		em
+		{
+			text-decoration:none;
+			font-size:10px;
+		}
+		nav li {
+			display: inline;
+			padding-right: 100px;
+		}
+		nav li a {
+			text-decoration: none;
+			color: white;
+		}
+		nav a:hover{
+			text-transform: uppercase;
+		}
+		/* background image taken from http://lego.wikia.com/wiki/File:Incredible-hulk-the-2008.jpg */
+		.content{
+			background: url(images/hulk2008.jpg) no-repeat;
+			margin:auto;
+			width: 700px;
+			height: 870px;
+			padding-right: 0;
+			padding-left: 0;
+		}
+		.trailer{
+			width:700px;
+			height: 400px;
+		}
+		object{
+			padding-left: 20px;
+			padding-right: 15px;
+			margin: 50px auto;
+			position: relative;
+			top:160px;
+		}
+		.mov_title{
+			text-align: center;
+			margin-bottom: 20px;
+			position: relative;
+			top:255px;
+		}
+		section {
+			background: blue;
+			margin: 20px auto;
+			position: relative;
+			top:290px;
+			opacity: .7;
+		}
+		section p {
+			margin: 20px auto;
+			padding-left: 15px;
+		}
+ 		footer{
+ 			text-align: center;
+ 			margin: 10px auto;
+ 			clear: both;
+ 		}
+
+	</style>
+</head>
+<body>
+	<div class="content">
+	<header>
+		<h1 class="Multimedia">Multimedia Incredible <strong>Hulk</strong> Edition</h1>
+	</header>
+		<nav>
+			<ul>
+				<li><a href="animation.html">animation</a></li>
+				<li><a href="audio.html">audio</a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+			</ul>
+		</nav>
+		
+		<div class="trailer">
+			<object width="640" height="275" type="video/qt">
+			<param name="src" value="images/Incredible_Hulk_2008.mp4">
+			<param name="controller" value="true">
+			<param name="autostart" value="false">
+
+			<object type="video/quicktime" data="images/Incredible_Hulk_2008.mp4" width="640" height="300" class="qt">
+			<param name="controller" value="true">
+			<param name="autostart" value="false">
+			Your browser does not support this movie trailer.
+			</object>
+
+			</object>
+		<h3 class="mov_title">The Incredible Hulk 2008 Movie Trailer <em>(7.4 MB)</em></h3>
+		<!--
+			<video width="640" height="300" controls>
+			<source src="images/Incredible_Hulk_2008.mp4" type="video/mp4">
+			<source src="images/Incredible_Hulk_2008.ogv" type="video/ogg">
+			Your browser does not support the video tag.
+			</video>
+			--> 
+		</div>
+		<section>
+			<p>
+				Thanks for joining me for another week of HTML training. This week it is all about multimedia. I do not own any of the contents on this page. Everything is for educational purposes only.
+			</p>
+		</section>
+
+	</div>
+	<footer>
+		
+		<script type="text/javascript">
+		var dateModified = document.lastModified;
+		mydate = dateModified.slice(0,16);
+		document.write("Last updated: " + mydate);
+		</script>
+		 &nbsp; | &nbsp;
+ 
+		<a href="http://validator.w3.org/check?uri=referer">
+		<img style="border:0;width:88px;height:31px" src="html5.jpg"
+		alt="HTML5"></a>
+
+
+	    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+	    <img style="border:0;width:88px;height:31px" src="images/vcss_blue.gif"
+	    alt="Valid CSS!"></a>    
+
+	</footer>
+</body>
+</html>
